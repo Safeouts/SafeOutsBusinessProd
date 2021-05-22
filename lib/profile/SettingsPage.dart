@@ -147,37 +147,6 @@ class _SettingsPageState extends State<SettingsPage> {
               ),
               ),
 
-              Card(
-                child:ListTile(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (ctx) => Staff()));
-                  },
-                  leading: Icon(Icons.notification_important,color: Colors.teal),
-                  title: Text("Staff"),
-                ),
-              ),
-              Card(
-                child:ListTile(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (ctx) => Safety()));
-                  },
-                  leading: Icon(Icons.notification_important,color: Colors.teal),
-                  title: Text("Safety"),
-                ),
-              ),
-              Card(
-                child:ListTile(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (ctx) => Profile()));
-                  },
-                  leading: Icon(Icons.notification_important,color: Colors.teal),
-                  title: Text("Profile"),
-                ),
-              ),
-
               SizedBox(
                 height: 60,
               ),

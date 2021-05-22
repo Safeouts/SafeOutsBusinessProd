@@ -134,33 +134,6 @@ class Safety extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: new BottomNavigationBar(
-        items: [
-          new BottomNavigationBarItem(
-            icon: new Icon(Icons.home, ),
-            title: new Text('Home'),
-          ),
-          new BottomNavigationBarItem(
-            icon: new Icon(Icons.people,),
-            title: new Text('Staff'),
-          ),
-          new BottomNavigationBarItem(
-            icon: new Icon(Icons.verified_user, color: Colors.teal,),
-            title: new Text('Safety' ),
-          ),
-          new BottomNavigationBarItem(
-            icon: new Icon(Icons.account_circle),
-            title: new Text('Profile'),
-          ),
-        ],
-        // currentIndex: i,
-        type: BottomNavigationBarType.fixed,
-        // onTap: (index) {
-        //   setState(() {
-        //     i = index;
-        //   });
-        // },
-      ),
     );
 
 

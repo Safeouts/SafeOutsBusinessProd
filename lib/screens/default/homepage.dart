@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:safeoutsbusinessprod/profile/SettingsPage.dart';
 
-class Home extends StatelessWidget {
+class Homepage extends StatelessWidget {
 
 
   @override
@@ -26,9 +26,13 @@ class Home extends StatelessWidget {
       body: SafeArea(
           child: Column(
             children: <Widget>[
+              Divider(
+                  height: 10,
+                  thickness:10),
               Container(
                 child: Row(
                   children: <Widget>[
+
                     Container(
                       alignment: Alignment.topLeft,
                       margin: EdgeInsets.only(top: 10, left: 20),
@@ -167,33 +171,6 @@ class Home extends StatelessWidget {
             ],
 
           )
-      ),
-      bottomNavigationBar: new BottomNavigationBar(
-        items: [
-          new BottomNavigationBarItem(
-            icon: new Icon(Icons.home, color: Colors.teal,),
-            title: new Text('Home'),
-          ),
-          new BottomNavigationBarItem(
-            icon: new Icon(Icons.people),
-            title: new Text('Staff'),
-          ),
-          new BottomNavigationBarItem(
-            icon: new Icon(Icons.verified_user),
-            title: new Text('Safety'),
-          ),
-          new BottomNavigationBarItem(
-            icon: new Icon(Icons.account_circle),
-            title: new Text('Profile'),
-          ),
-        ],
-        // currentIndex: i,
-        type: BottomNavigationBarType.fixed,
-        // onTap: (index) {
-        //   setState(() {
-        //     i = index;
-        //   });
-        // },
       ),
     );
   }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:safeoutsbusinessprod/screens/default/admin_homepage.dart';
+import 'package:safeoutsbusinessprod/screens/default/homepage.dart';
+
+import '../home.dart';
 
 
 class NewAdminOtp extends StatelessWidget {
