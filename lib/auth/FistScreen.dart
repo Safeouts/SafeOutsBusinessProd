@@ -9,9 +9,9 @@ class FirstScreen extends StatelessWidget{
   Widget build(BuildContext context) {
     // final FirebaseAuth auth = FirebaseAuth.instance;
     // String userData() {
-      // final User user = auth.currentUser;
-      // final uid = user.uid;
-      // return uid;
+    //   final User user = auth.currentUser;
+    //   final uid = user.uid;
+    //   return uid;
     // }
     // TODO: implement build
     return Scaffold(

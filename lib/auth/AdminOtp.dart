@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'AdminPin.dart';
+import 'package:pinput/pin_put/pin_put.dart';
 
 
 class AdminOtp extends StatefulWidget {
@@ -58,22 +57,23 @@ class _AdminOtpState extends State<AdminOtp>{
                 SizedBox(height: 20.0),
                 Container(
                     padding: EdgeInsets.all(20.0),
-                    // child: PinPut(
-                    //   fieldsCount: 6,
-                    //   textStyle: const TextStyle(fontSize: 25.0, color: Colors.white),
-                    //   eachFieldWidth: 40.0,
-                    //   eachFieldHeight: 55.0,
-                    //   focusNode: _pinPutFocusNode,
-                    //   controller: _pinPutController,
-                    //   submittedFieldDecoration: textDecoration,
-                    //   selectedFieldDecoration: pinPutDecoration,
-                    //   followingFieldDecoration: pinPutDecoration,
-                      // pinAnimationType: PinAnimationType.fade,
-                      // onSubmit: (pin) async {
+                    child: PinPut(
+                      fieldsCount: 6,
+                      textStyle: const TextStyle(fontSize: 25.0, color: Colors.white),
+                      eachFieldWidth: 40.0,
+                      eachFieldHeight: 55.0,
+                      focusNode: _pinPutFocusNode,
+                      controller: _pinPutController,
+                      submittedFieldDecoration: textDecoration,
+                      selectedFieldDecoration: pinPutDecoration,
+                      followingFieldDecoration: pinPutDecoration,
+                      pinAnimationType: PinAnimationType.fade,
+                      onSubmit: (pin) async {
                         // try {
                         //   await FirebaseAuth.instance
                         //       .signInWithCredential(PhoneAuthProvider.getCredential(
-                        //       verificationId: _verificationCode, smsCode: pin))
+                        //       verificationId: _verificationCode, smsCode: pin)
+                        //   )
                         //       .then((value) async {
                         //     if (value.user != null) {
                         //       Navigator.pushAndRemoveUntil(
@@ -87,8 +87,8 @@ class _AdminOtpState extends State<AdminOtp>{
                         //   _scaffoldkey.currentState
                         //       .showSnackBar(SnackBar(content: Text('invalid OTP')));
                         // }
-                    //   },
-                    // )
+                      },
+                    )
                 ),
                 SizedBox(height: 20.0,),
                 SizedBox(
@@ -108,12 +108,12 @@ class _AdminOtpState extends State<AdminOtp>{
                       //       verificationId: _verificationCode, smsCode: pin))
                       //       .then((value) async {
                       //     if (value.user != null)
-                          {
-                            Navigator.pushAndRemoveUntil(
-                                context,
-                                MaterialPageRoute(builder: (context) => AdminPin()),
-                                    (route) => false);
-                          }
+                      //     {
+                      //       Navigator.pushAndRemoveUntil(
+                      //           context,
+                      //           MaterialPageRoute(builder: (context) => AdminPin()),
+                      //               (route) => false);
+                      //     }
                       //   });
                       // } catch (e) {
                       //   FocusScope.of(context).unfocus();
@@ -146,19 +146,19 @@ class _AdminOtpState extends State<AdminOtp>{
     //         }
     //       });
     //     },
-    //     verificationFailed: (FirebaseAuthException e) {
-    //       print(e.message);
-    //     },
-    //     codeSent: (String verficationID, int resendToken) {
-    //       setState(() {
-    //         _verificationCode = verficationID;
-    //       });
-    //     },
-    //     codeAutoRetrievalTimeout: (String verificationID) {
-    //       setState(() {
-    //         _verificationCode = verificationID;
-    //       });
-    //     },
+        // verificationFailed: (FirebaseAuthException e) {
+        //   print(e.message);
+        // },
+        // codeSent: (String verficationID, int resendToken) {
+        //   setState(() {
+        //     _verificationCode = verficationID;
+        //   });
+        // },
+        // codeAutoRetrievalTimeout: (String verificationID) {
+        //   setState(() {
+        //     _verificationCode = verificationID;
+        //   });
+        // },
     //     timeout: Duration(seconds: 120)
     // );
   }
